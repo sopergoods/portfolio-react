@@ -49,7 +49,6 @@ function App() {
   };
 
   useEffect(() => {
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -118,7 +117,7 @@ function App() {
             <h1 className="hero-name">Vince Timothy Asutilla</h1>
             <h2 className="hero-title">Web Developer</h2>
             <div className="hero-hobbies">
-              <h3>Aspiring:</h3>
+              <h3>Looking for:</h3>
               <div className="pill-container">
                 <span className="pill">Full Stack Dev</span>
                 <span className="pill">Web Dev</span>
@@ -136,17 +135,17 @@ function App() {
       <div className="bento-container" id="about">
         {/* LEFT COLUMN: About & Tech Stack */}
         <div className="bento-column">
-          
+
           <div className="bento-card">
             <h2 className="section-title">
               <IoBriefcaseOutline className="section-icon" /> About
             </h2>
             <div className="about-text">
               <p>
-                Motivated Computer Science student nearing graduation seeking an entry-level position in the technology field where I can apply my technical skills, contribute to organizational goals, and continuously develop my knowledge in software development and related areas.
+                Computer Science graduate with hands-on experience in backend development, web application development, database management, and system deployment. Skilled in building real-world systems using Node.js, Express.js, React.js, PHP, MySQL, JavaScript, and modern web technologies.
               </p>
               <p>
-                I am actively seeking an Internship / OJT opportunity where I can apply what I've learned and gain hands-on industry experience. I am based in the Philippines and have a strong passion for technology and continuous improvement.
+                Experienced in RESTful API development, authentication systems, responsive UI design, deployment, and version control using Git. I am based in the Philippines and open to entry-level roles, collaborations, and opportunities in software and web development.
               </p>
             </div>
           </div>
@@ -155,25 +154,65 @@ function App() {
             <h2 className="section-title">
               <PiFlask className="section-icon" /> Tech Stack
             </h2>
-            
+
+            <div className="tech-category">
+              <h3>This Website</h3>
+              <div className="pill-container">
+                <span className="pill">React.js</span>
+                <span className="pill">Vite</span>
+                <span className="pill">Three.js</span>
+                <span className="pill">React Three Fiber</span>
+                <span className="pill">React Three Drei</span>
+                <span className="pill">Rapier Physics</span>
+                <span className="pill">react-icons</span>
+                <span className="pill">CSS Variables</span>
+              </div>
+            </div>
+
             <div className="tech-category">
               <h3>Frontend</h3>
               <div className="pill-container">
-                <span className="pill">HTML</span>
-                <span className="pill">CSS</span>
+                <span className="pill">HTML5</span>
+                <span className="pill">CSS3</span>
                 <span className="pill">JavaScript</span>
-                <span className="pill">React (Vite)</span>
+                <span className="pill">React.js</span>
+                <span className="pill">Bootstrap</span>
+                <span className="pill">Responsive Web Design</span>
               </div>
             </div>
 
             <div className="tech-category">
               <h3>Backend</h3>
               <div className="pill-container">
+                <span className="pill">Node.js</span>
+                <span className="pill">Express.js</span>
                 <span className="pill">PHP</span>
-                <span className="pill">MySQL</span>
-                <span className="pill">Java</span>
+                <span className="pill">REST API</span>
+                <span className="pill">JWT Authentication</span>
+                <span className="pill">AJAX</span>
                 <span className="pill">C++</span>
                 <span className="pill">C#</span>
+                <span className="pill">Java</span>
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <h3>Database</h3>
+              <div className="pill-container">
+                <span className="pill">MySQL</span>
+                <span className="pill">SQLite</span>
+                <span className="pill">Database Management</span>
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <h3>Tools & Deployment</h3>
+              <div className="pill-container">
+                <span className="pill">Git</span>
+                <span className="pill">GitHub</span>
+                <span className="pill">Railway</span>
+                <span className="pill">Vercel</span>
+                <span className="pill">Vite</span>
               </div>
             </div>
 
@@ -184,9 +223,10 @@ function App() {
                 <span className="pill">Problem Solving</span>
                 <span className="pill">Database Management</span>
                 <span className="pill">SDLC</span>
+                <span className="pill">OOP</span>
+                <span className="pill">Backend Development</span>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -209,36 +249,91 @@ function App() {
             <MdOutlineDashboard className="section-icon" /> Projects
           </h2>
           <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1rem' }}>
-            
+
+            {/* Queue Management System */}
             <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Queue Management System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>SSS Mandaluyong Branch - OJT Project.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Built for SSS Mandaluyong Branch during OJT. Handles ticket generation, queue tracking, and client prioritization to streamline government service flow.
+              </p>
               <div className="pill-container">
-                <span className="pill">Web Application</span>
+                <span className="pill">Node.js</span>
+                <span className="pill">Express.js</span>
+                <span className="pill">SQLite</span>
+                <span className="pill">JavaScript</span>
+                <span className="pill">HTML</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Git</span>
               </div>
             </div>
 
+            {/* Personal Portfolio Website */}
             <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Personal Portfolio Website</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Showcased technical projects and skills using modern web technologies.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Interactive 3D portfolio built with React and Three.js, featuring a physics-based Lanyard animation, dark/light theme toggle, and a responsive bento grid layout.
+              </p>
               <div className="pill-container">
-                <span className="pill">React / 3D</span>
+                <span className="pill">React.js</span>
+                <span className="pill">Vite</span>
+                <span className="pill">Three.js</span>
+                <span className="pill">React Three Fiber</span>
+                <span className="pill">React Three Drei</span>
+                <span className="pill">JavaScript</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Git</span>
               </div>
             </div>
 
+            {/* Automated Judging System */}
             <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Thesis Judging System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Web-based evaluation system with automation and scoring.</p>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Automated Judging System</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Web-based system for managing competitions, judges, participants, and automated score computation with real-time ranking and result reporting.
+              </p>
               <div className="pill-container">
-                <span className="pill">Full-Stack</span>
+                <span className="pill">Node.js</span>
+                <span className="pill">Express.js</span>
+                <span className="pill">MySQL</span>
+                <span className="pill">JavaScript</span>
+                <span className="pill">Bootstrap</span>
+                <span className="pill">JWT Auth</span>
+                <span className="pill">Railway</span>
+                <span className="pill">Git</span>
               </div>
             </div>
 
+            {/* Water Billing System */}
             <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Water Billing System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>Developed a system to automate water billing and payment tracking for Mikesell Water Supply.</p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Billing and payment tracking system for Mikesell Water Supply — handles customer records, billing computation, and automated report generation.
+              </p>
               <div className="pill-container">
-                <span className="pill">Database / UI</span>
+                <span className="pill">PHP</span>
+                <span className="pill">MySQL</span>
+                <span className="pill">JavaScript</span>
+                <span className="pill">HTML</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Git</span>
+              </div>
+            </div>
+
+            {/* Hotel Booking System */}
+            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Hotel Booking System</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Web-based hotel booking management system with reservation tracking, room availability, and customer record management with a responsive Bootstrap UI.
+              </p>
+              <div className="pill-container">
+                <span className="pill">PHP</span>
+                <span className="pill">MySQL</span>
+                <span className="pill">Bootstrap</span>
+                <span className="pill">JavaScript</span>
+                <span className="pill">HTML</span>
+                <span className="pill">CSS</span>
+                <span className="pill">Railway</span>
+                <span className="pill">Git</span>
               </div>
             </div>
 
@@ -255,7 +350,7 @@ function App() {
             <FaEnvelope className="section-icon" /> Get in Touch
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            I'm open to internship opportunities, collaborations, and entry-level roles in web development.
+            I'm a fresh CS graduate open to entry-level roles, collaborations, and opportunities in web and software development.
             Feel free to reach out — I'd love to connect!
           </p>
           <a
