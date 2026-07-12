@@ -1,10 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import Lanyard from './components/Lanyard/Lanyard';
 import Timeline from './components/Timeline/Timeline';
+import VideoSamples from './components/VideoSamples/VideoSamples';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { PiFlask } from 'react-icons/pi';
 import { MdOutlineDashboard } from 'react-icons/md';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope, FaVideo } from 'react-icons/fa';
 import './App.css';
 
 // --- PHOTOS ---
@@ -71,6 +72,7 @@ function App() {
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#ad-samples">Ad Samples</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -240,6 +242,16 @@ function App() {
           </div>
         </div>
 
+      </div>
+
+      {/* AI AD SAMPLES */}
+      <div className="bento-container" id="ad-samples" style={{ marginTop: '2rem' }}>
+        <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
+          <h2 className="section-title">
+            <FaVideo className="section-icon" /> AI Ad Samples
+          </h2>
+          <VideoSamples />
+        </div>
       </div>
 
       {/* PROJECTS BENTO GRID */}
