@@ -5,19 +5,25 @@ import './VideoSamples.css';
 // ------------------------------------------------------------------
 // Add your AI ad reels here.
 //
-// PREFERRED — Local video file:
+// OPTION 1 — Local video file (best if the file is small, <20MB or so):
 //   1. Drop your .mp4 file into the `public/videos/` folder
 //      (create that folder if it doesn't exist yet)
 //   2. Set `src` below to '/videos/your-file-name.mp4'
 //
-// FALLBACK — Google Drive (only if you haven't uploaded the file yet):
+// OPTION 2 — YouTube (best for larger files, no size limit):
+//   1. Upload the video to YouTube, set visibility to "Unlisted"
+//   2. Copy the video ID from the URL:
+//      https://www.youtube.com/watch?v=COPY_THIS_PART
+//   3. Paste that ID as the youtubeId below
+//
+// OPTION 3 — Google Drive (fallback, needs "Anyone with the link" sharing):
 //   1. In Drive, right-click the video -> Share -> "Anyone with the link" -> Viewer
 //   2. Copy the file's ID from the share URL:
 //      https://drive.google.com/file/d/COPY_THIS_PART/view
 //   3. Paste that ID as the driveId below.
 //
-// Leave both `src` and `driveId` empty ('') to show a placeholder card
-// until the video is ready.
+// Priority if multiple are filled in: src > youtubeId > driveId.
+// Leave all three empty ('') to show a placeholder card until ready.
 // ------------------------------------------------------------------
 const videoSamples = [
   {
@@ -26,6 +32,7 @@ const videoSamples = [
     client: 'Client / Brand',
     platform: 'TikTok',
     src: '', // e.g. '/videos/street-interview.mp4'
+    youtubeId: '', // e.g. 'dQw4w9WgXcQ'
     driveId: '1FJ7tTVVecOwyIwcLyzygibb2lWHpxwpk',
   },
   {
@@ -34,6 +41,7 @@ const videoSamples = [
     client: 'Client / Brand',
     platform: 'Shopee',
     src: '', // e.g. '/videos/ugc-style-ad.mp4'
+    youtubeId: '', // e.g. 'dQw4w9WgXcQ'
     driveId: '1h9hmoymeNur6ipYPMXj5c2Ic1jDnTDbI',
   },
   {
@@ -42,6 +50,7 @@ const videoSamples = [
     client: 'Client / Brand',
     platform: 'TikTok',
     src: '', // e.g. '/videos/podcast-clip.mp4'
+    youtubeId: '', // e.g. 'dQw4w9WgXcQ'
     driveId: '1pq-sV4WjKy7vFqgWlNN5KEAE1xJvTTrW',
   },
 ];
@@ -59,6 +68,13 @@ const VideoSamples = () => {
                 playsInline
                 preload="metadata"
               />
+            ) : video.youtubeId ? (
+              <iframe
+                src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             ) : video.driveId ? (
               <iframe
                 src={`https://drive.google.com/file/d/${video.driveId}/preview`}
@@ -70,7 +86,7 @@ const VideoSamples = () => {
               <div className="video-placeholder">
                 <FaPlay />
                 <p>{video.title}</p>
-                <small>Add a video file or Google Drive file ID</small>
+                <small>Add a video file, YouTube ID, or Drive file ID</small>
               </div>
             )}
           </div>
