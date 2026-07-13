@@ -28,6 +28,11 @@ const timelineData = [
     year: "2024",
   },
   {
+    title: "AI Ads Specialist",
+    role: "Double A Agri Supply — produced 1–4 AI-generated video ads per day (scripting, AI voice-over, avatar video, editing)",
+    year: "Jul. 2024 - Jan. 2025",
+  },
+  {
     title: "Learning Git",
     role: "Version control and collaboration workflows",
     year: "2025",
@@ -41,6 +46,11 @@ const timelineData = [
     title: "OJT Completed",
     role: "300 hours — SSS Shaw Blvd., Mandaluyong City",
     year: "2026",
+  },
+  {
+    title: "AI Ads Specialist (Freelance)",
+    role: "Self-employed — AI-generated video ads for small business clients on Shopee & TikTok Shop",
+    year: "Nov. 2025 - Present",
   }
 ];
 
