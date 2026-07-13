@@ -117,13 +117,13 @@ function App() {
 
           <div className="hero-details">
             <h1 className="hero-name">Vince Timothy Asutilla</h1>
-            <h2 className="hero-title">Web Developer</h2>
+            <h2 className="hero-title">AI Ads Specialist</h2>
             <div className="hero-hobbies">
               <h3>Looking for:</h3>
               <div className="pill-container">
-                <span className="pill">Full Stack Dev</span>
-                <span className="pill">Web Dev</span>
-                <span className="pill">UI/UX Design</span>
+                <span className="pill">AI Ad Production</span>
+                <span className="pill">Freelance Projects</span>
+                <span className="pill">Video Content</span>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@ function App() {
             </h2>
             <div className="about-text">
               <p>
-                Computer Science graduate with hands-on experience in backend development, web application development, database management, and system deployment. Skilled in building real-world systems using Node.js, Express.js, React.js, PHP, MySQL, JavaScript, and modern web technologies.
+                AI Ads Specialist with 2 years of experience producing end-to-end AI-generated video ads — scripting, AI voice-over, AI avatar video, and editing — for small business and agricultural supply clients selling on Shopee and TikTok Shop. Skilled across a modern generative AI stack including Google Flow, Higgsfield, Hedra, HeyGen, ElevenLabs, ChatGPT, Claude, and Grok to take ads from concept to published post quickly.
               </p>
               <p>
-                Experienced in RESTful API development, authentication systems, responsive UI design, deployment, and version control using Git. I am based in the Philippines and open to entry-level roles, collaborations, and opportunities in software and web development.
+                Also a Computer Science graduate with backend and web development skills in Node.js, Express.js, React.js, PHP, and MySQL — comfortable on the technical side of a workflow, not just the creative side. Based in the Philippines and open to freelance projects, collaborations, and opportunities in AI-driven advertising and content production.
               </p>
             </div>
           </div>
@@ -156,6 +156,20 @@ function App() {
             <h2 className="section-title">
               <PiFlask className="section-icon" /> Tech Stack
             </h2>
+
+            <div className="tech-category">
+              <h3>AI Ads Production</h3>
+              <div className="pill-container">
+                <span className="pill">Google Flow</span>
+                <span className="pill">Higgsfield</span>
+                <span className="pill">Hedra</span>
+                <span className="pill">HeyGen</span>
+                <span className="pill">ElevenLabs</span>
+                <span className="pill">ChatGPT</span>
+                <span className="pill">Claude</span>
+                <span className="pill">Grok</span>
+              </div>
+            </div>
 
             <div className="tech-category">
               <h3>This Website</h3>
@@ -310,40 +324,6 @@ function App() {
                 <span className="pill">JavaScript</span>
                 <span className="pill">Bootstrap</span>
                 <span className="pill">JWT Auth</span>
-                <span className="pill">Railway</span>
-                <span className="pill">Git</span>
-              </div>
-            </div>
-
-            {/* Water Billing System */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Water Billing System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Billing and payment tracking system for Mikesell Water Supply — handles customer records, billing computation, and automated report generation.
-              </p>
-              <div className="pill-container">
-                <span className="pill">PHP</span>
-                <span className="pill">MySQL</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">HTML</span>
-                <span className="pill">CSS</span>
-                <span className="pill">Git</span>
-              </div>
-            </div>
-
-            {/* Hotel Booking System */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Hotel Booking System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Web-based hotel booking management system with reservation tracking, room availability, and customer record management with a responsive Bootstrap UI.
-              </p>
-              <div className="pill-container">
-                <span className="pill">PHP</span>
-                <span className="pill">MySQL</span>
-                <span className="pill">Bootstrap</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">HTML</span>
-                <span className="pill">CSS</span>
                 <span className="pill">Railway</span>
                 <span className="pill">Git</span>
               </div>
