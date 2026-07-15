@@ -29,7 +29,7 @@ const timelineData = [
   },
   {
     title: "AI Ads Specialist",
-    role: "Double A Agri Supply — produced 1–4 AI-generated video ads per day (scripting, AI voice-over, avatar video, editing)",
+    role: "Agricultural supply ecommerce client — produced 1–4 AI-generated video ads per day (AI voice-over, avatar video, editing)",
     year: "Jul. 2024 - Jan. 2025",
   },
   {
@@ -49,7 +49,7 @@ const timelineData = [
   },
   {
     title: "AI Ads Specialist (Freelance)",
-    role: "Self-employed — AI-generated video ads for small business clients on Shopee & TikTok Shop",
+    role: "Self-employed — AI-generated video and static ads for ecommerce clients on Meta, Shopee & TikTok Shop",
     year: "Nov. 2025 - Present",
   }
 ];
