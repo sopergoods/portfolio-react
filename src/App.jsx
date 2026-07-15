@@ -121,9 +121,9 @@ function App() {
             <div className="hero-hobbies">
               <h3>Looking for:</h3>
               <div className="pill-container">
-                <span className="pill">AI Ad Production</span>
-                <span className="pill">Freelance Projects</span>
-                <span className="pill">Video Content</span>
+                <span className="pill">AI Video Ads</span>
+                <span className="pill">Freelance & Retainer</span>
+                <span className="pill">Immediately Available</span>
               </div>
             </div>
           </div>
@@ -144,10 +144,10 @@ function App() {
             </h2>
             <div className="about-text">
               <p>
-                AI Ads Specialist with 2 years of experience producing end-to-end AI-generated video ads — scripting, AI voice-over, AI avatar video, and editing — for small business and agricultural supply clients selling on Shopee and TikTok Shop. Skilled across a modern generative AI stack including Google Flow, Higgsfield, Hedra, HeyGen, ElevenLabs, ChatGPT, Claude, and Grok to take ads from concept to published post quickly.
+                AI Ads Specialist with 2 years of experience producing end-to-end AI-generated video and static ads for ecommerce clients on Meta, Shopee, and TikTok Shop. Working from client briefs, I build ads using AI avatar video, AI voice-over, and generative video tools, then finish everything in CapCut and Premiere Pro. Fastest turnaround has been about 2 hours from brief to finished ad, and one recent Shopee skincare campaign delivered a 4% sales increase.
               </p>
               <p>
-                Also a Computer Science graduate with backend and web development skills in Node.js, Express.js, React.js, PHP, and MySQL — comfortable on the technical side of a workflow, not just the creative side. Based in the Philippines and open to freelance projects, collaborations, and opportunities in AI-driven advertising and content production.
+                Core stack includes Higgsfield, HeyGen, Hedra, Google Flow, Veo, Kling, Seedance, ElevenLabs, and Nano Banana, with CapCut, Premiere Pro, After Effects, and Canva for editing and finishing. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
               </p>
             </div>
           </div>
@@ -160,11 +160,30 @@ function App() {
             <div className="tech-category">
               <h3>AI Ads Production</h3>
               <div className="pill-container">
-                <span className="pill">Google Flow</span>
                 <span className="pill">Higgsfield</span>
-                <span className="pill">Hedra</span>
                 <span className="pill">HeyGen</span>
+                <span className="pill">Hedra</span>
+                <span className="pill">Google Flow / Veo</span>
+                <span className="pill">Kling</span>
+                <span className="pill">Seedance</span>
                 <span className="pill">ElevenLabs</span>
+                <span className="pill">Nano Banana</span>
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <h3>Editing & Finishing</h3>
+              <div className="pill-container">
+                <span className="pill">CapCut</span>
+                <span className="pill">Premiere Pro</span>
+                <span className="pill">After Effects</span>
+                <span className="pill">Canva</span>
+              </div>
+            </div>
+
+            <div className="tech-category">
+              <h3>Scripting & Angle Testing</h3>
+              <div className="pill-container">
                 <span className="pill">ChatGPT</span>
                 <span className="pill">Claude</span>
                 <span className="pill">Grok</span>
@@ -272,9 +291,34 @@ function App() {
       <div className="bento-container" id="projects" style={{ marginTop: '2rem' }}>
         <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
           <h2 className="section-title">
-            <MdOutlineDashboard className="section-icon" /> Projects
+            <MdOutlineDashboard className="section-icon" /> Campaign Highlights & Projects
           </h2>
           <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1rem' }}>
+
+            {/* Shopee Skincare Campaign */}
+            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Shopee Skincare Campaign</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Produced AI-generated video ads for a retinol serum on Shopee. Campaign delivered a measured 4% increase in sales.
+              </p>
+              <div className="pill-container">
+                <span className="pill">Higgsfield</span>
+                <span className="pill">ElevenLabs</span>
+                <span className="pill">CapCut</span>
+              </div>
+            </div>
+
+            {/* Cleen Digestive Health Gummies */}
+            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Cleen Digestive Health Gummies</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+                Short-form vertical video ads for a digestive health supplement brand, produced from brief to finished cut using AI video generation and CapCut.
+              </p>
+              <div className="pill-container">
+                <span className="pill">Google Flow / Veo</span>
+                <span className="pill">CapCut</span>
+              </div>
+            </div>
 
             {/* Queue Management System */}
             <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
@@ -342,8 +386,8 @@ function App() {
             <FaEnvelope className="section-icon" /> Get in Touch
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            I'm a fresh CS graduate open to entry-level roles, collaborations, and opportunities in web and software development.
-            Feel free to reach out — I'd love to connect!
+            Immediately available for freelance and retainer work as an AI Ads Specialist, producing video and static ads for ecommerce brands on Meta, Shopee, and TikTok Shop.
+            Flexible on timezone. Feel free to reach out — I'd love to connect!
           </p>
           <a
             href="mailto:asutillavince@gmail.com"
