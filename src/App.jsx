@@ -203,65 +203,6 @@ function App() {
                 <span className="pill">CSS Variables</span>
               </div>
             </div>
-
-            <div className="tech-category">
-              <h3>Frontend</h3>
-              <div className="pill-container">
-                <span className="pill">HTML5</span>
-                <span className="pill">CSS3</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">React.js</span>
-                <span className="pill">Bootstrap</span>
-                <span className="pill">Responsive Web Design</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Backend</h3>
-              <div className="pill-container">
-                <span className="pill">Node.js</span>
-                <span className="pill">Express.js</span>
-                <span className="pill">PHP</span>
-                <span className="pill">REST API</span>
-                <span className="pill">JWT Authentication</span>
-                <span className="pill">AJAX</span>
-                <span className="pill">C++</span>
-                <span className="pill">C#</span>
-                <span className="pill">Java</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Database</h3>
-              <div className="pill-container">
-                <span className="pill">MySQL</span>
-                <span className="pill">SQLite</span>
-                <span className="pill">Database Management</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Tools & Deployment</h3>
-              <div className="pill-container">
-                <span className="pill">Git</span>
-                <span className="pill">GitHub</span>
-                <span className="pill">Railway</span>
-                <span className="pill">Vercel</span>
-                <span className="pill">Vite</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Skills</h3>
-              <div className="pill-container">
-                <span className="pill">System Design</span>
-                <span className="pill">Problem Solving</span>
-                <span className="pill">Database Management</span>
-                <span className="pill">SDLC</span>
-                <span className="pill">OOP</span>
-                <span className="pill">Backend Development</span>
-              </div>
-            </div>
           </div>
         </div>
 
