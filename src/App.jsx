@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from 'react';
 import Lanyard from './components/Lanyard/Lanyard';
 import Timeline from './components/Timeline/Timeline';
 import VideoSamples from './components/VideoSamples/VideoSamples';
+import Tools from './components/Tools/Tools';
 import { IoBriefcaseOutline } from 'react-icons/io5';
-import { PiFlask } from 'react-icons/pi';
-import { MdOutlineDashboard } from 'react-icons/md';
+import { PiToolbox } from 'react-icons/pi';
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope, FaVideo } from 'react-icons/fa';
 import './App.css';
 
@@ -66,15 +66,14 @@ function App() {
     <>
       {/* NAV */}
       <nav>
-        <h1><a href="/">Vince</a></h1>
+        <h1><a href="#home" className="nav-brand"><FaVideo className="nav-brand-icon" /> Vince</a></h1>
         <div className="nav-right">
           <ul id="navMenu" ref={navMenuRef} style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
             <li><a href="#home">Home</a></li>
+            <li><a href="#ad-samples">Work</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#ad-samples">Ad Samples</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#tools">Tools</a></li>
+<li><a href="#contact">Contact</a></li>
           </ul>
           <button className="theme-toggle" onClick={toggleTheme} title="Toggle Theme">
             {theme === 'light' ? '🌙' : '☀️'}
@@ -117,14 +116,20 @@ function App() {
 
           <div className="hero-details">
             <h1 className="hero-name">Vince Timothy Asutilla</h1>
-            <h2 className="hero-title">AI Ads Specialist</h2>
+            <h2 className="hero-title">AI Video Specialist — UGC, VSL &amp; Direct-Response Ads</h2>
             <div className="hero-hobbies">
               <h3>Looking for:</h3>
               <div className="pill-container">
-                <span className="pill">AI Video Ads</span>
+                <span className="pill">AI UGC Ads</span>
+                <span className="pill">VSL</span>
                 <span className="pill">Freelance & Retainer</span>
                 <span className="pill">Immediately Available</span>
               </div>
+            </div>
+            <div className="hero-stats">
+              <div className="stat"><strong>2+ yrs</strong><span>AI video ads</span></div>
+              <div className="stat"><strong>3–4</strong><span>creatives / day</span></div>
+              <div className="stat"><strong>~2 hrs</strong><span>brief to delivery</span></div>
             </div>
           </div>
         </div>
@@ -133,80 +138,34 @@ function App() {
         </div>
       </section>
 
-      {/* BENTO GRID */}
-      <div className="bento-container" id="about">
-        {/* LEFT COLUMN: About & Tech Stack */}
-        <div className="bento-column">
+      {/* AI VIDEO WORK */}
+      <div className="bento-container" id="ad-samples" style={{ marginTop: '2rem' }}>
+        <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
+          <h2 className="section-title">
+            <FaVideo className="section-icon" /> AI Video Work
+          </h2>
+          <VideoSamples />
+        </div>
+      </div>
 
+      {/* ABOUT + EXPERIENCE */}
+      <div className="bento-container" id="about">
+        <div className="bento-column">
           <div className="bento-card">
             <h2 className="section-title">
               <IoBriefcaseOutline className="section-icon" /> About
             </h2>
             <div className="about-text">
               <p>
-                AI Ads Specialist with 2 years of experience producing end-to-end AI-generated video and static ads for ecommerce clients on Meta, Shopee, and TikTok Shop. Working from client briefs, I build ads using AI avatar video, AI voice-over, and generative video tools, then finish everything in CapCut and Premiere Pro. Fastest turnaround has been about 2 hours from brief to finished ad, and one recent Shopee skincare campaign delivered a 4% sales increase.
+                AI Video Specialist with 2 years of experience producing AI-generated UGC, VSL, and direct-response video ads for ecommerce brands on Meta, TikTok, and Shopee. I take a client brief and turn it into finished, ready-to-run creatives using AI video generation, avatars, and AI voice-over, then assemble everything in CapCut.
               </p>
               <p>
-                Core stack includes Higgsfield, HeyGen, Hedra, Google Flow, Veo, Kling, Seedance, ElevenLabs, and Nano Banana, with CapCut, Premiere Pro, After Effects, and Canva for editing and finishing. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
+                I deliver 3–4 finished creatives a day, with a fastest turnaround of about 2 hours from brief to final ad. A recent Shopee skincare campaign delivered a 4% sales increase. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
               </p>
-            </div>
-          </div>
-
-          <div className="bento-card">
-            <h2 className="section-title">
-              <PiFlask className="section-icon" /> Tech Stack
-            </h2>
-
-            <div className="tech-category">
-              <h3>AI Ads Production</h3>
-              <div className="pill-container">
-                <span className="pill">Higgsfield</span>
-                <span className="pill">HeyGen</span>
-                <span className="pill">Hedra</span>
-                <span className="pill">Google Flow / Veo</span>
-                <span className="pill">Kling</span>
-                <span className="pill">Seedance</span>
-                <span className="pill">ElevenLabs</span>
-                <span className="pill">Nano Banana</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Editing & Finishing</h3>
-              <div className="pill-container">
-                <span className="pill">CapCut</span>
-                <span className="pill">Premiere Pro</span>
-                <span className="pill">After Effects</span>
-                <span className="pill">Canva</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>Scripting & Angle Testing</h3>
-              <div className="pill-container">
-                <span className="pill">ChatGPT</span>
-                <span className="pill">Claude</span>
-                <span className="pill">Grok</span>
-              </div>
-            </div>
-
-            <div className="tech-category">
-              <h3>This Website</h3>
-              <div className="pill-container">
-                <span className="pill">React.js</span>
-                <span className="pill">Vite</span>
-                <span className="pill">Three.js</span>
-                <span className="pill">React Three Fiber</span>
-                <span className="pill">React Three Drei</span>
-                <span className="pill">Rapier Physics</span>
-                <span className="pill">react-icons</span>
-                <span className="pill">CSS Variables</span>
-              </div>
             </div>
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Experience / Timeline */}
         <div className="bento-column" id="experience">
           <div className="bento-card">
             <h2 className="section-title">
@@ -215,106 +174,15 @@ function App() {
             <Timeline />
           </div>
         </div>
-
       </div>
 
-      {/* AI AD SAMPLES */}
-      <div className="bento-container" id="ad-samples" style={{ marginTop: '2rem' }}>
+      {/* TOOLS I USE */}
+      <div className="bento-container" id="tools" style={{ marginTop: '2rem' }}>
         <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
           <h2 className="section-title">
-            <FaVideo className="section-icon" /> AI Ad Samples
+            <PiToolbox className="section-icon" /> Tools I Use
           </h2>
-          <VideoSamples />
-        </div>
-      </div>
-
-      {/* PROJECTS BENTO GRID */}
-      <div className="bento-container" id="projects" style={{ marginTop: '2rem' }}>
-        <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
-          <h2 className="section-title">
-            <MdOutlineDashboard className="section-icon" /> Campaign Highlights & Projects
-          </h2>
-          <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginTop: '1rem' }}>
-
-            {/* Shopee Skincare Campaign */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Shopee Skincare Campaign</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Produced AI-generated video ads for a retinol serum on Shopee. Campaign delivered a measured 4% increase in sales.
-              </p>
-              <div className="pill-container">
-                <span className="pill">Higgsfield</span>
-                <span className="pill">ElevenLabs</span>
-                <span className="pill">CapCut</span>
-              </div>
-            </div>
-
-            {/* Cleen Digestive Health Gummies */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Cleen Digestive Health Gummies</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Short-form vertical video ads for a digestive health supplement brand, produced from brief to finished cut using AI video generation and CapCut.
-              </p>
-              <div className="pill-container">
-                <span className="pill">Google Flow / Veo</span>
-                <span className="pill">CapCut</span>
-              </div>
-            </div>
-
-            {/* Queue Management System */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Queue Management System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Built for SSS Mandaluyong Branch during OJT. Handles ticket generation, queue tracking, and client prioritization to streamline government service flow.
-              </p>
-              <div className="pill-container">
-                <span className="pill">Node.js</span>
-                <span className="pill">Express.js</span>
-                <span className="pill">SQLite</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">HTML</span>
-                <span className="pill">CSS</span>
-                <span className="pill">Git</span>
-              </div>
-            </div>
-
-            {/* Personal Portfolio Website */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Personal Portfolio Website</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Interactive 3D portfolio built with React and Three.js, featuring a physics-based Lanyard animation, dark/light theme toggle, and a responsive bento grid layout.
-              </p>
-              <div className="pill-container">
-                <span className="pill">React.js</span>
-                <span className="pill">Vite</span>
-                <span className="pill">Three.js</span>
-                <span className="pill">React Three Fiber</span>
-                <span className="pill">React Three Drei</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">CSS</span>
-                <span className="pill">Git</span>
-              </div>
-            </div>
-
-            {/* Automated Judging System */}
-            <div className="project-item" style={{ padding: '1.5rem', background: 'var(--card-bg)', border: '1px solid var(--card-border)', borderRadius: '12px', transition: 'transform 0.2s ease' }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-color)' }}>Automated Judging System</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Web-based system for managing competitions, judges, participants, and automated score computation with real-time ranking and result reporting.
-              </p>
-              <div className="pill-container">
-                <span className="pill">Node.js</span>
-                <span className="pill">Express.js</span>
-                <span className="pill">MySQL</span>
-                <span className="pill">JavaScript</span>
-                <span className="pill">Bootstrap</span>
-                <span className="pill">JWT Auth</span>
-                <span className="pill">Railway</span>
-                <span className="pill">Git</span>
-              </div>
-            </div>
-
-          </div>
+          <Tools />
         </div>
       </div>
 
@@ -327,7 +195,7 @@ function App() {
             <FaEnvelope className="section-icon" /> Get in Touch
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            Immediately available for freelance and retainer work as an AI Ads Specialist, producing video and static ads for ecommerce brands on Meta, Shopee, and TikTok Shop.
+            Immediately available for freelance and retainer work as an AI Video Specialist, producing UGC, VSL, and direct-response video ads for ecommerce brands on Meta, TikTok, and Shopee.
             Flexible on timezone. Feel free to reach out — I'd love to connect!
           </p>
           <a
