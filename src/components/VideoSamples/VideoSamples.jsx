@@ -29,6 +29,16 @@ const categories = [
     ],
   },
   {
+    id: 'pixar',
+    title: 'Pixar / 3D Animation',
+    desc: 'Animated 3D character ads with a stylized, story-first look.',
+    moreUrl: 'https://drive.google.com/drive/folders/1fTHzUve2XGtLuFv-vCMW2XExGBMdCr5K?usp=drive_link',
+    videos: [
+      { title: 'Pixar-Style #1', platform: 'TikTok', driveId: '1gCaBiEyAEJOSkZ8IZ0VlRI_yZ0z9vqeq' },
+      { title: 'Pixar-Style #2', platform: 'TikTok', driveId: '1Mc8Q_IiKRbR__1hdqd0cfIQ1TT7ZCmrp' },
+    ],
+  },
+  {
     id: 'doctor-ugc',
     title: 'Doctor / Herbalist UGC',
     desc: 'Authority-led AI doctor and herbalist presenters for health & wellness ads.',
@@ -36,7 +46,7 @@ const categories = [
     videos: [
       { title: 'Doctor UGC #1', platform: 'Meta', driveId: '1-HLwlYcEIZdg0qtSM890RSuL_jT3RQNx' },
       { title: 'Doctor UGC #2', platform: 'Meta', driveId: '131eJu-cfWTjpPIm4w4yGCLNGEc_GUb1v' },
-      { title: 'Doctor UGC #3', platform: 'Meta', driveId: '1YtUX4RsOvkON9E0GdrBDIushdg0JQmHU' },
+      { title: 'Doctor UGC #3', platform: 'TikTok', driveId: '1YtUX4RsOvkON9E0GdrBDIushdg0JQmHU' },
     ],
   },
   {
@@ -45,19 +55,9 @@ const categories = [
     desc: 'Ads that look and feel like real creators filming on a phone.',
     moreUrl: MORE_ADS,
     videos: [
-      { title: 'Realism UGC #1', platform: 'Meta', driveId: '1Udjp6Zj0wNA_1-5bxs1hoKY7-V8p_g7e' },
-      { title: 'Realism UGC #2', platform: 'Meta', driveId: '11YhbtfVRhrNtBwsOPk5L76Y5AQQ2O0bp' },
+      { title: 'Realism UGC #1', platform: 'TikTok', driveId: '1Udjp6Zj0wNA_1-5bxs1hoKY7-V8p_g7e' },
+      { title: 'Realism UGC #2', platform: 'TikTok', driveId: '11YhbtfVRhrNtBwsOPk5L76Y5AQQ2O0bp' },
       { title: 'Mini VSL', platform: 'Meta', driveId: '1hrImvr5n6XFSh0SWzYkwL4vY5ZvrnoFP' },
-    ],
-  },
-  {
-    id: 'pixar',
-    title: 'Pixar / 3D Animation',
-    desc: 'Animated 3D character ads with a stylized, story-first look.',
-    moreUrl: 'https://drive.google.com/drive/folders/1fTHzUve2XGtLuFv-vCMW2XExGBMdCr5K?usp=drive_link',
-    videos: [
-      { title: 'Pixar-Style #1', platform: 'Meta', driveId: '1gCaBiEyAEJOSkZ8IZ0VlRI_yZ0z9vqeq' },
-      { title: 'More Pixar / 3D', platform: 'Folder', folderUrl: 'https://drive.google.com/drive/folders/1fTHzUve2XGtLuFv-vCMW2XExGBMdCr5K?usp=drive_link' },
     ],
   },
   {
@@ -68,7 +68,7 @@ const categories = [
     videos: [
       { title: 'Before & After #1', platform: 'Meta', driveId: '15RvxKmS_5lUgH6kgK73rYelh8Fj0B2bG' },
       { title: 'Before & After #2', platform: 'Meta', driveId: '1bPUI5Qw012MgkY-ULl8SFTkd9as3PxFg' },
-      { title: 'Before & After #3', platform: 'Meta', driveId: '1ssUXXWGPHVU0gW9OVvituxFEkIVOirFs' },
+      { title: 'Before & After #3', platform: 'TikTok', driveId: '1ssUXXWGPHVU0gW9OVvituxFEkIVOirFs' },
     ],
   },
 ];
