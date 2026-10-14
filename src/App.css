@@ -567,3 +567,20 @@ nav .nav-right {
 @media (max-width: 968px) {
   .hero-stats { justify-content: center; }
 }
+
+.contact-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.contact-cta-alt {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--card-border);
+}
+
+[data-theme='dark'] .contact-cta-alt {
+  background: transparent;
+  border-color: var(--accent-color);
+}

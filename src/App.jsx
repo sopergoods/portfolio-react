@@ -5,7 +5,7 @@ import VideoSamples from './components/VideoSamples/VideoSamples';
 import Tools from './components/Tools/Tools';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { PiToolbox } from 'react-icons/pi';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope, FaVideo } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope, FaVideo, FaBriefcase } from 'react-icons/fa';
 import './App.css';
 
 // --- PHOTOS ---
@@ -127,9 +127,9 @@ function App() {
               </div>
             </div>
             <div className="hero-stats">
-              <div className="stat"><strong>2+ yrs</strong><span>AI video ads</span></div>
+              <div className="stat"><strong>2 yrs</strong><span>AI video ads</span></div>
               <div className="stat"><strong>3–4</strong><span>creatives / day</span></div>
-              <div className="stat"><strong>~2 hrs</strong><span>brief to delivery</span></div>
+              <div className="stat"><strong>~3 hrs</strong><span>brief to delivery (varies)</span></div>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ function App() {
       <div className="bento-container" id="ad-samples" style={{ marginTop: '2rem' }}>
         <div className="bento-card" style={{ gridColumn: '1 / -1' }}>
           <h2 className="section-title">
-            <FaVideo className="section-icon" /> AI Video Work
+            <FaVideo className="section-icon" /> AI Video Work — Meta Ads
           </h2>
           <VideoSamples />
         </div>
@@ -160,7 +160,7 @@ function App() {
                 AI Video Specialist with 2 years of experience producing AI-generated UGC, VSL, and direct-response video ads for ecommerce brands on Meta, TikTok, and Shopee. I take a client brief and turn it into finished, ready-to-run creatives using AI video generation, avatars, and AI voice-over, then assemble everything in CapCut.
               </p>
               <p>
-                I deliver 3–4 finished creatives a day, with a fastest turnaround of about 2 hours from brief to final ad. A recent Shopee skincare campaign delivered a 4% sales increase. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
+                I deliver 3–4 finished creatives a day, with a fastest turnaround of about 3 hours from brief to final ad. A recent Shopee skincare campaign delivered a 4% sales increase. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
               </p>
             </div>
           </div>
@@ -198,12 +198,22 @@ function App() {
             Immediately available for freelance and retainer work as an AI Video Specialist, producing UGC, VSL, and direct-response video ads for ecommerce brands on Meta, TikTok, and Shopee.
             Flexible on timezone. Feel free to reach out — I'd love to connect!
           </p>
-          <a
-            href="mailto:asutillavince@gmail.com"
-            className="contact-cta"
-          >
-            Send me an email →
-          </a>
+          <div className="contact-cta-row">
+            <a
+              href="mailto:asutillavince@gmail.com"
+              className="contact-cta"
+            >
+              Send me an email →
+            </a>
+            <a
+              href="https://www.onlinejobs.ph/jobseekers/info/5090285"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-cta contact-cta-alt"
+            >
+              Hire me on OnlineJobs.ph →
+            </a>
+          </div>
         </div>
 
         {/* Right: Social links */}
@@ -216,6 +226,14 @@ function App() {
               <div>
                 <p className="contact-link-label">Email</p>
                 <p className="contact-link-value">asutillavince@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.onlinejobs.ph/jobseekers/info/5090285" target="_blank" rel="noopener noreferrer" className="contact-link-item">
+              <div className="contact-icon-wrap"><FaBriefcase /></div>
+              <div>
+                <p className="contact-link-label">OnlineJobs.ph</p>
+                <p className="contact-link-value">View my profile</p>
               </div>
             </a>
 
