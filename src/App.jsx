@@ -5,7 +5,7 @@ import VideoSamples from './components/VideoSamples/VideoSamples';
 import Tools from './components/Tools/Tools';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { PiToolbox } from 'react-icons/pi';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebookMessenger, FaEnvelope, FaVideo, FaBriefcase } from 'react-icons/fa';
+import { FaEnvelope, FaVideo, FaBriefcase } from 'react-icons/fa';
 import './App.css';
 
 // --- PHOTOS ---
@@ -115,7 +115,7 @@ function App() {
           </div>
 
           <div className="hero-details">
-            <h1 className="hero-name">Vince Timothy Asutilla</h1>
+            <h1 className="hero-name">Vince</h1>
             <h2 className="hero-title">AI Video Specialist — UGC, VSL &amp; Direct-Response Ads</h2>
             <div className="hero-hobbies">
               <h3>Looking for:</h3>
@@ -216,7 +216,7 @@ function App() {
           </div>
         </div>
 
-        {/* Right: Social links */}
+        {/* Right: Contact links */}
         <div className="bento-card">
           <h2 className="section-title" style={{ marginBottom: '1.5rem' }}>Connect</h2>
           <div className="contact-links">
@@ -237,38 +237,14 @@ function App() {
               </div>
             </a>
 
-            <a href="https://github.com/sopergoods" target="_blank" rel="noopener noreferrer" className="contact-link-item">
-              <div className="contact-icon-wrap"><FaGithub /></div>
-              <div>
-                <p className="contact-link-label">GitHub</p>
-                <p className="contact-link-value">github.com/sopergoods</p>
-              </div>
-            </a>
-
-            <a href="https://www.linkedin.com/in/vince-asutilla1/" target="_blank" rel="noopener noreferrer" className="contact-link-item">
-              <div className="contact-icon-wrap"><FaLinkedin /></div>
-              <div>
-                <p className="contact-link-label">LinkedIn</p>
-                <p className="contact-link-value">Vince Asutilla</p>
-              </div>
-            </a>
-
-            <a href="https://www.facebook.com/timssasutilla" target="_blank" rel="noopener noreferrer" className="contact-link-item">
-              <div className="contact-icon-wrap"><FaFacebookMessenger /></div>
-              <div>
-                <p className="contact-link-label">Messenger</p>
-                <p className="contact-link-value">timssasutilla</p>
-              </div>
-            </a>
-
-          </div>
+</div>
         </div>
 
       </div>
 
       {/* FOOTER */}
       <footer className="site-footer">
-        <p>© {new Date().getFullYear()} Vince Timothy Asutilla — All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Vince — All rights reserved.</p>
       </footer>
 
     </>
