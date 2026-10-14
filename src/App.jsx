@@ -127,9 +127,9 @@ function App() {
               </div>
             </div>
             <div className="hero-stats">
-              <div className="stat"><strong>2+ yrs</strong><span>AI video ads</span></div>
+              <div className="stat"><strong>2 years</strong><span>AI video ads</span></div>
               <div className="stat"><strong>3–4</strong><span>creatives / day</span></div>
-              <div className="stat"><strong>~2 hrs</strong><span>brief to delivery</span></div>
+              <div className="stat"><strong>~3 hrs</strong><span>brief to delivery (depends)</span></div>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ function App() {
                 AI Video Specialist with 2 years of experience producing AI-generated UGC, VSL, and direct-response video ads for ecommerce brands on Meta, TikTok, and Shopee. I take a client brief and turn it into finished, ready-to-run creatives using AI video generation, avatars, and AI voice-over, then assemble everything in CapCut.
               </p>
               <p>
-                I deliver 3–4 finished creatives a day, with a fastest turnaround of about 2 hours from brief to final ad. A recent Shopee skincare campaign delivered a 4% sales increase. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
+                I deliver 3–4 finished creatives a day, with a fastest turnaround of about 3 hours from brief to final ad. A recent Shopee skincare campaign delivered a 4% sales increase. Based in the Philippines, remote-first, immediately available, and flexible on timezone for clients in the UK, EU, Australia, and Asia.
               </p>
             </div>
           </div>
@@ -204,6 +204,15 @@ function App() {
           >
             Send me an email →
           </a>
+          <a
+            href="https://www.onlinejobs.ph/jobseekers/info/5090285"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-cta"
+            style={{ marginTop: '0.75rem' }}
+          >
+            View my OnlineJobs.ph profile →
+          </a>
         </div>
 
         {/* Right: Social links */}
@@ -216,6 +225,14 @@ function App() {
               <div>
                 <p className="contact-link-label">Email</p>
                 <p className="contact-link-value">asutillavince@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.onlinejobs.ph/jobseekers/info/5090285" target="_blank" rel="noopener noreferrer" className="contact-link-item">
+              <div className="contact-icon-wrap"><IoBriefcaseOutline /></div>
+              <div>
+                <p className="contact-link-label">OnlineJobs.ph</p>
+                <p className="contact-link-value">onlinejobs.ph/jobseekers/info/5090285</p>
               </div>
             </a>
 
