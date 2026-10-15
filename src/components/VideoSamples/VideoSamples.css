@@ -272,3 +272,41 @@
 .more-ads-btn:hover {
   opacity: 0.85;
 }
+
+/* Static (image) ads */
+.image-grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 280px));
+}
+
+.image-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: var(--pill-bg);
+  overflow: hidden;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.image-frame:hover img {
+  transform: scale(1.03);
+}
+
+.image-fallback {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

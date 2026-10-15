@@ -71,6 +71,31 @@ const categories = [
       { title: 'Before & After #3', platform: 'Meta', driveId: '1ssUXXWGPHVU0gW9OVvituxFEkIVOirFs' },
     ],
   },
+  {
+    id: 'static-ads',
+    type: 'image',
+    title: 'Static Ads',
+    desc: 'Scroll-stopping image ads designed for Meta feeds and stories.',
+    moreUrl: MORE_ADS,
+    videos: [
+      { title: 'Static Ad #1', platform: 'Meta', driveId: '1I_cfsgr3BZ3vpLtdDXY51OO-rwpS0xAI' },
+      { title: 'Static Ad #2', platform: 'Meta', driveId: '1pORuj98d5Mfh7J-Vh6uecYVp_s31ST5k' },
+      { title: 'Static Ad #3', platform: 'Meta', driveId: '1UWPXDXjz1nNlfte0_X5yhIUp3HCp62-Z' },
+      { title: 'Static Ad #4', platform: 'Meta', driveId: '1GL98C_LJyMORZwOD07AjcEqB7pjTJEhN' },
+      { title: 'Static Ad #5', platform: 'Meta', driveId: '1EfGxW2NedMg78zpyrrYX4KyLyw3bBXdU' },
+    ],
+  },
+  {
+    id: 'crypto',
+    title: 'Crypto Ads',
+    desc: 'Raw cuts from crypto client work. The polished final edits are under NDA and can\'t be shared.',
+    moreUrl: MORE_ADS,
+    videos: [
+      { title: 'Crypto Ad #1 (raw)', platform: 'Meta', driveId: '16AmVLQrnJTbXAiS-OGrCtrmjPkanAHGF' },
+      { title: 'Crypto Ad #2 (raw)', platform: 'Meta', driveId: '1hZEX613Bu8Jr7OrTEiJBJd7xiGwpxort' },
+      { title: 'Crypto Ad #3 (raw)', platform: 'Meta', driveId: '1-J9-NKzilQf1DJ7Um6aGvwHgIBWl5B-z' },
+    ],
+  },
 ];
 
 // Click-to-play card: shows a Drive thumbnail first, loads the player only on click.
@@ -133,6 +158,37 @@ const VideoCard = ({ video }) => {
   );
 };
 
+// Static ads: show the image itself; clicking opens the full-size file in Drive.
+const ImageCard = ({ item }) => {
+  const [ok, setOk] = useState(true);
+  return (
+    <div className="video-card">
+      <a
+        className="image-frame"
+        href={`https://drive.google.com/file/d/${item.driveId}/view`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Open ${item.title}`}
+      >
+        {ok ? (
+          <img
+            src={`https://drive.google.com/thumbnail?id=${item.driveId}&sz=w800`}
+            alt={item.title}
+            loading="lazy"
+            onError={() => setOk(false)}
+          />
+        ) : (
+          <span className="image-fallback">View ad</span>
+        )}
+      </a>
+      <div className="video-info">
+        <h4>{item.title}</h4>
+        <span className="pill">{item.platform}</span>
+      </div>
+    </div>
+  );
+};
+
 const VideoSamples = () => {
   return (
     <div className="video-categories">
@@ -154,10 +210,14 @@ const VideoSamples = () => {
               </a>
             )}
           </div>
-          <div className="video-grid">
-            {cat.videos.map((video, i) => (
-              <VideoCard video={video} key={`${cat.id}-${i}`} />
-            ))}
+          <div className={cat.type === 'image' ? 'video-grid image-grid' : 'video-grid'}>
+            {cat.videos.map((video, i) =>
+              cat.type === 'image' ? (
+                <ImageCard item={video} key={`${cat.id}-${i}`} />
+              ) : (
+                <VideoCard video={video} key={`${cat.id}-${i}`} />
+              )
+            )}
           </div>
         </div>
       ))}
