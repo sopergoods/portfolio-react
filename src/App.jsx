@@ -116,7 +116,7 @@ function App() {
 
           <div className="hero-details">
             <h1 className="hero-name">Vince</h1>
-            <h2 className="hero-title">AI Video Specialist — UGC, VSL &amp; Direct-Response Ads</h2>
+            <h2 className="hero-title">AI Video Specialist / AI Creative Strategies — UGC, VSL &amp; Direct-Response Ads</h2>
             <div className="hero-hobbies">
               <h3>Looking for:</h3>
               <div className="pill-container">
